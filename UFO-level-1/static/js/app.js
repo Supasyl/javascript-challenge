@@ -1,5 +1,6 @@
 // assign data from 'data.js' to variable
 let sightings = data;
+console.log(sightings);
 
 // variables to reference parts of the table
 let table = d3.select('table');
@@ -10,9 +11,11 @@ sightings.forEach((sighting) => {
 	// add one row for each sighting
 	let row = tbody.append('tr');
 	// 
-	Object.defineProperties(sightings).forEach(([key, value]) => {
-		// append each cell
+	Object.defineProperties(sighting).forEach(([key, value]) => {
+		// append one cell for each value
 		let cell = row.append('td');
+		// add values to the cells
+		cell.text(value)
 		console.log(key, value);
 	});
 });
