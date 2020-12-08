@@ -1,0 +1,113 @@
+.navbar {
+    background-color: aquamarine !important;
+}
+
+.navbar-brand {
+    color: rgb(77, 77, 77) !important;
+}
+
+.nav-ufo {
+    position: absolute;
+    bottom: 5px;
+    left: 150px;
+    width: 35px;
+}
+
+html {
+    height: 100%;
+    background-color: aquamarine;
+}
+
+body {
+    height: 100%;
+    background-color: aquamarine;
+}
+
+h1 {
+    padding: 200px 0px 10px 0px;
+    font-size: 50pt;
+    color: azure;
+}
+
+h2 {
+    padding: 0px 0px 200px 0px;
+    font-size: 20pt;
+    color: azure;
+}
+
+tr {
+    color: rgb(77, 77, 77);
+    font-size: 16pt;
+}
+
+td, th {
+    padding: 1px 4px;
+  }
+
+p {
+    color: rgb(77, 77, 77);
+}
+
+.container {
+    max-width: none;
+}
+.parallax { 
+    /* The image used */
+    background-image: url("../images/UFO_image.jpg");
+    
+    /* Set a specific height */
+    height: 50%; 
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table {
+    /* border-collapse: collapse; */
+    width: fit-content;
+}
+.table-bordered {
+    border-color: maroon !important;
+}
+
+td {
+    text-align: left;
+    font-size: 12px;
+}
+
+tr:nth-child(even) {background-color: mediumaquamarine;}
+tr:hover {background-color: maroon;}
+
+form {
+    color: rgb(77, 77, 77);
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: mediumaquamarine;
+}
+
+button {
+    background-color: rgb(80, 165, 136);
+    color: rgb(77, 77, 77);
+    font-weight: bolder;
+}
+h3 {
+    background-color: rgb(80, 165, 136);
+    padding: 5px 5px 10px 5px;
+}
+
+.footer {
+    color: rgb(77, 77, 77);
+    margin: 10px 0px 0px 10px;
+    position: sticky;
+    bottom: 0px;
+    
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
