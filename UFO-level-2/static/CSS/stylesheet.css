@@ -79,7 +79,8 @@ td {
 }
 
 tr:nth-child(even) {background-color: mediumaquamarine;}
-tr:hover {background-color: maroon;}
+tr:nth-child(odd) {background-color: aquamarine;}
+tr:hover {background-color: maroon !important;}
 
 form {
     color: rgb(77, 77, 77);
@@ -88,10 +89,18 @@ form {
     background-color: mediumaquamarine;
 }
 
+::placeholder {
+    color: rgb(200, 200, 200) !important;
+}
+.form-control {
+    margin-bottom: 10px;
+}
+
 button {
     background-color: rgb(80, 165, 136);
+    margin-top: 20px;
     color: rgb(77, 77, 77);
-    font-weight: bolder;
+    font-weight: bold !important;
 }
 h3 {
     background-color: rgb(80, 165, 136);

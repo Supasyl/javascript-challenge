@@ -35,19 +35,21 @@
         <div class='row'>
             <!-- search box -->
             <div class='col-lg-3'>
-                <form>
-                    <h3>Filter Search</h3>
+                <form id='searchForm'>
+                    <h3 class='text-center'>Filter Search</h3>
                     <div class='form-group'>
                         <label for='Date'>Enter a date</label><br>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011"><br>
-                    </div>
-                    <div class='form-group'>
+                            <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
                         <label for='City'>Choose a City</label>
-                        <select class='form-control' id='City'>
-                            <option></option>
-                        </select>
+                            <select class='form-control' id='City'></select>
+                        <label for='State'>Choose a State</label>
+                            <select class='form-control' id='State'></select>
+                        <label for='Country'>Choose a Country</label>
+                            <select class='form-control' id='Country'></select>
+                        <label for='Shape'>Choose a Shape</label>
+                            <select class='form-control' id='Shape'></select>
+                        <button id='button' type='submit' class='btn btn-lg btn-block'>Submit</button>
                     </div>
-                    <button id='button' type='button' class='btn btn-default'>Submit</button>
                 </form>
             </div>
 
@@ -66,7 +68,6 @@
                         </tr>
                     </thead>
                     <tbody class='table-bordered'>
-                        
                     </tbody>
                 </table>
             </div>

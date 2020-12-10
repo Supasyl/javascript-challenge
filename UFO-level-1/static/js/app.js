@@ -20,6 +20,8 @@ sightings.forEach((sighting) => {
 //// filter with date input
 //assign variable to inputfield
 function Action() {
+	// prevent enter from refreshing the page
+	d3.event.preventDefault();
 	// clear values in the current table
 	tbody.html('');
 	// define the input text
@@ -40,27 +42,8 @@ function Action() {
 	});
 };
 
-// when pressing submit button, use function
+// when pressing submit button or enter, use function
 let submitButton = d3.select('#button');
-submitButton.on('click', Action);
-// runEnter.on('keypress', Action);
+let form = d3.select('#searchForm');
+form.on('submit', Action);
 
-//prevent the page from refreshing if enter or spacebvar is pressed
-
-// input.addEventListener('keyup', (event) => {
-// 	if (event.keyCode === 13) {
-// 		event.preventDefault();
-// 		ubmitButton.on('click', Action);
-// 	}
-// };
-
-// let body = d3.select("body");
-// let p = body.selectAll(null)
-//   .on("keypress", () => {
-//     if(d3.event.keyCode === 13){
-//     console.log("Congrats, you pressed enter or space!")
-//     }
-// });
-
-// let runEnter = (d3.event.keyCode === 13);
-// runEnter.on('click', Action);
