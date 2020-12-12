@@ -1,4 +1,4 @@
 # javascript-challenge
 14 JavaScript Homework - JavaScript and DOM manipulation  
   
-Please note that for level-2 to work you must enter a value in all input fields.
+Please note I chose not to reset the values of the fields on pressing the submit button so you can filter the search further and reset when you're ready.
