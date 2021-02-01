@@ -7,5 +7,8 @@ Please note I chose not to reset the values of the fields on pressing the submit
 * Created a website showing the information in a table format.
 * Provided a filter search with multiple filter options using D3 and jQuery.
 
+### Website screenshot - opening page
 ![Initial](Website_screenshots/initial.png)
+
+### Website screenshot - After a search
 ![Selection](Website_screenshots/selection.png)
